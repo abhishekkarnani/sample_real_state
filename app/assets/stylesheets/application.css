@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *= require_self
+ *= require_tree .
+ */
+
+
+@import "bootstrap";
+
+body {
+	background-color: #FBFBFB;
+	font-size: 12px;
+  font-family: "proxima-nova", Helvetica, Arial, Sans-serif;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td	{
+	padding: 5px;
+}
+
+.header-content th{
+  background-color: #efefef;
+  background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#fdfdfd), to(#eaeaea));
+  background-image: -webkit-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+  background-image: -moz-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+  background-image: -ms-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+  background-image: -o-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+  background-image: -linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+}
+
+.footer {
+  height: 100px;
+  background: #154A63;
+  color: #fff;
+}
+.logo {
+  margin-top:80px;
+}
+.header {
+  background: #5EAB1F;
+  color:#fff;
+}
+.header a {
+  color: #fff;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #569C1C;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+background-color: #569C1C;
+}
